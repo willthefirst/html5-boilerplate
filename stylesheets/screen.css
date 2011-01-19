@@ -1,0 +1,49 @@
+/* @group Elements */
+
+label,
+input[type=button],
+input[type=submit],
+button {
+	cursor: pointer;
+}
+
+button {
+	overflow: visible;
+	width: auto;
+}
+
+.ie7 img {
+	-ms-interpolation-mode: bicubic;
+}
+
+/* @end */
+
+
+/* @group Helper classes */
+
+.alt {
+	left: -9999px;
+	position: absolute;
+}
+
+.lte7 .clear {
+	zoom: 1;
+}
+
+.clear:before {
+	clear: both;
+	content: "";
+	display: block;
+	height: 0;
+	overflow: hidden;
+}
+
+.clear:after {
+	clear: both;
+}
+
+.js .hide {
+	display: none;
+}
+
+/* @end */

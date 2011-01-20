@@ -12,6 +12,16 @@ button {
 	width: auto;
 }
 
+button:focus {
+	outline-style: dotted;
+	outline-width: 1px;
+}
+
+button::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
 .ie7 img {
 	-ms-interpolation-mode: bicubic;
 }

@@ -1,4 +1,4 @@
-var NAMESPACE = NAMESPACE || {
+var NAMESPACE = {
 	common: {
 		init: function() {
 			
@@ -6,7 +6,7 @@ var NAMESPACE = NAMESPACE || {
 	}
 };
 
-var UTIL = UTIL || {
+var UTIL = {
 	exec: function( controller, action ) {
 		var ns = NAMESPACE,
 			act = ( action === undefined ) ? "init" : action;

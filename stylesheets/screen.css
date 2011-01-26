@@ -40,16 +40,12 @@ button::-moz-focus-inner {
 	zoom: 1;
 }
 
-.clear:before {
+.clear:after {
 	clear: both;
 	content: "";
 	display: block;
 	height: 0;
 	overflow: hidden;
-}
-
-.clear:after {
-	clear: both;
 }
 
 .js .hide {

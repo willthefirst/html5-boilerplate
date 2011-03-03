@@ -1,30 +1,50 @@
 /* @group Elements */
 
-label,
-input[type=button],
-input[type=submit],
-button {
-	cursor: pointer;
-}
+	/* @group Block elements */
 
-button {
-	overflow: visible;
-	width: auto;
-}
+	
 
-button:focus {
-	outline-style: dotted;
-	outline-width: 1px;
-}
+	/* @end */
+	
+	/* @group Inline elements */
 
-button::-moz-focus-inner {
-	border: 0;
-	padding: 0;
-}
+	.ie7 img {
+		-ms-interpolation-mode: bicubic;
+	}
 
-.ie7 img {
-	-ms-interpolation-mode: bicubic;
-}
+	/* @end */
+	
+	/* @group Form elements */
+
+	input,
+	textarea {
+		color: inherit;
+		font: inherit;
+	}
+	
+	label,
+	input[type=button],
+	input[type=submit],
+	button {
+		cursor: pointer;
+	}
+
+	button {
+		overflow: visible;
+		width: auto;
+	}
+
+	button:focus {
+		outline-style: dotted;
+		outline-width: 1px;
+	}
+
+	button::-moz-focus-inner {
+		border: 0;
+		padding: 0;
+	}
+
+	/* @end */
 
 /* @end */
 

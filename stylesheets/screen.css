@@ -11,6 +11,14 @@
 	.ie7 img {
 		-ms-interpolation-mode: bicubic;
 	}
+	
+	strong {
+		font-weight: bold;
+	}
+	
+	em {
+		font-style: italic;
+	}
 
 	/* @end */
 	

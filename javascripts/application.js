@@ -11,7 +11,7 @@ var UTIL = {
 		var ns = NAMESPACE,
 			act = ( action === undefined ) ? "init" : action;
 		
-		if ( controller !== "" && ns[controller] && typeof( ns[controller][act] ) == "function" ) {
+		if ( controller !== "" && ns[controller] && typeof ns[controller][act] == "function" ) {
 			ns[controller][act]();
 		}
 	},

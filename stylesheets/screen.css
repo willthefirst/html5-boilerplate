@@ -1,12 +1,14 @@
 /* @group Elements */
 
-	/* @group Block elements */
+	/* @group - Block elements */
 
-	
+	ol {
+		list-style-type: decimal;
+	}
 
 	/* @end */
 	
-	/* @group Inline elements */
+	/* @group - Inline elements */
 
 	.ie7 img {
 		-ms-interpolation-mode: bicubic;
@@ -19,27 +21,34 @@
 	em {
 		font-style: italic;
 	}
+	
+	a:active,
+	a:hover {
+		outline: none;
+	}
 
 	/* @end */
 	
-	/* @group Form elements */
+	/* @group - Form elements */
 
-	input,
-	textarea {
-		color: inherit;
-		font: inherit;
-	}
-	
 	label,
-	input[type=button],
-	input[type=submit],
+	input[type="button"],
+	input[type="image"]
+	input[type="submit"],
 	button {
 		cursor: pointer;
 	}
 
-	button {
+	button,
+	input,
+	select,
+	textarea {
 		overflow: visible;
 		width: auto;
+	}
+	
+	textarea {
+		overflow: auto;
 	}
 
 	button:focus {
@@ -47,9 +56,26 @@
 		outline-width: 1px;
 	}
 
+	input::-moz-focus-inner,
 	button::-moz-focus-inner {
 		border: 0;
 		padding: 0;
+	}
+	
+	input[type="checkbox"] {
+		vertical-align: bottom;
+	}
+	
+	.ie7 input[type="checkbox"] {
+		vertical-align: baseline;
+	}
+	
+	input[type="radio"] {
+		vertical-align: text-bottom;
+	}
+	
+	.ie6 input {
+		vertical-align: text-bottom;
 	}
 
 	/* @end */
@@ -59,11 +85,6 @@
 
 /* @group Helper classes */
 
-.alt {
-	left: -9999px;
-	position: absolute;
-}
-
 .clear:after {
 	clear: both;
 	content: "";
@@ -72,6 +93,13 @@
 
 .clear {
 	zoom: 1;
+}
+
+.ir {
+	display: block;
+	overflow: hidden;
+	text-align: left;
+	text-indent: -999em;
 }
 
 .js .hide {

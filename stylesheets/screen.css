@@ -64,16 +64,14 @@
 	position: absolute;
 }
 
-.lte7 .clear {
-	zoom: 1;
-}
-
 .clear:after {
 	clear: both;
 	content: "";
-	display: block;
-	height: 0;
-	overflow: hidden;
+	display: table;
+}
+
+.clear {
+	zoom: 1;
 }
 
 .js .hide {

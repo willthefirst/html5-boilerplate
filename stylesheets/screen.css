@@ -44,11 +44,13 @@
 	select,
 	textarea {
 		overflow: visible;
+		vertical-align: baseline;
 		width: auto;
 	}
 	
 	textarea {
 		overflow: auto;
+		vertical-align: text-top;
 	}
 
 	button:focus {
@@ -62,22 +64,6 @@
 		padding: 0;
 	}
 	
-	input[type="checkbox"] {
-		vertical-align: bottom;
-	}
-	
-	.ie7 input[type="checkbox"] {
-		vertical-align: baseline;
-	}
-	
-	input[type="radio"] {
-		vertical-align: text-bottom;
-	}
-	
-	.ie6 input {
-		vertical-align: text-bottom;
-	}
-
 	/* @end */
 
 /* @end */

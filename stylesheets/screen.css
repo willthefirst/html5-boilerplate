@@ -33,7 +33,7 @@
 
 	label,
 	input[type="button"],
-	input[type="image"]
+	input[type="image"],
 	input[type="submit"],
 	button {
 		cursor: pointer;

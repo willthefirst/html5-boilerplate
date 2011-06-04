@@ -71,14 +71,14 @@
 
 /* @group Helper classes */
 
+.clear {
+	zoom: 1;
+}
+
 .clear:after {
 	clear: both;
 	content: "";
 	display: table;
-}
-
-.clear {
-	zoom: 1;
 }
 
 .ir {

@@ -65,6 +65,14 @@
 	}
 	
 	/* @end */
+	
+	/* @group Tables */
+
+	table {
+		empty-cells: show;
+	}
+
+	/* @end */
 
 /* @end */
 

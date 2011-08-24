@@ -1,105 +1,200 @@
+/* @group @font-face */
+
+
+
+/* @end */
+
+
 /* @group Elements */
 
-	/* @group - Block elements */
+html {
+	
+}
 
-	ol {
-		list-style-type: decimal;
-	}
+body {
+	
+}
 
-	/* @end */
-	
-	/* @group - Inline elements */
-
-	.ie7 img {
-		-ms-interpolation-mode: bicubic;
-	}
-	
-	strong {
-		font-weight: bold;
-	}
-	
-	em {
-		font-style: italic;
-	}
-	
-	a:active,
-	a:hover {
-		outline: none;
-	}
-
-	/* @end */
-	
 	/* @group - Form elements */
-
-	label,
-	input[type="button"],
-	input[type="image"],
-	input[type="submit"],
-	button {
+	
+	label {
 		cursor: pointer;
 	}
-
+	
 	button,
 	input,
 	select,
 	textarea {
-		overflow: visible;
+		font-size: 100%;
+		margin: 0;
 		vertical-align: baseline;
-		width: auto;
+		*vertical-align: middle;
 	}
 	
-	textarea {
-		overflow: auto;
-		vertical-align: text-top;
-	}
-
 	button:focus {
 		outline-style: dotted;
 		outline-width: 1px;
 	}
-
-	input::-moz-focus-inner,
-	button::-moz-focus-inner {
-		border: 0;
-		padding: 0;
-	}
 	
+	textarea {
+		resize: vertical;
+	}
+
 	/* @end */
 	
-	/* @group Tables */
+	/* @group - Tables */
 
 	table {
 		empty-cells: show;
 	}
+	
+	td {
+		vertical-align: top;
+	}
 
 	/* @end */
 
 /* @end */
 
 
-/* @group Helper classes */
+/* ----- Replace this here comment with your own CSS! ----- */
 
-.clear {
-	zoom: 1;
-}
 
-.clear:after {
-	clear: both;
-	content: "";
-	display: table;
-}
+/* @group Non-semantic helper classes */
 
-.ir {
-	display: block;
-	overflow: hidden;
-	text-align: left;
-	text-indent: -999em;
-}
+	/* @group - Contain floats: h5bp.com/q */
+	
+	.clear {
+		zoom: 1;
+	}
 
-.js .hide {
-	display: none;
-}
+	.clear:before,
+	.clear:after {
+		content: "";
+		display: table;
+	}
+
+	.clear:after {
+		clear: both;
+	}
+	
+	/* @end */
+
+	/* @group - Image replacement */
+	
+	.ir {
+		display: block;
+		overflow: hidden;
+		text-align: left;
+		text-indent: -999em;
+	}
+	
+	/* @end */
+
+	/* @group - Hide only visually, but have element available for screenreaders: h5bp.com/v */
+	
+	.visuallyhidden {
+		border: 0;
+		clip: rect( 0 0 0 0 );
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+	}
+	
+	/* @end */
+
+	/* @group - Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+	
+	.visuallyhidden.focusable:active,
+	.visuallyhidden.focusable:focus {
+		clip: auto;
+		height: auto;
+		margin: 0;
+		overflow: visible;
+		position: static;
+		width: auto;
+	}
+	
+	/* @end */
+	
+	/* @group - Hide from screen readers and browsers: h5bp.com/u */
+	
+	.js .hidden {
+		display: none !important;
+	}
+	
+	/* @end */
 
 /* @end */
 
 
+/* @group Print styles */
+
+@media print {
+	@page {
+		margin: 0.5cm;
+	}
+	
+	* {
+		background: transparent !important;
+		color: black !important;
+		-ms-filter: none !important;
+		filter:none !important;
+		text-shadow: none !important;
+	}
+	
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
+	
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
+	
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
+	
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content: "";
+	}
+	
+	blockquote,
+	pre {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+	
+	thead {
+		display: table-header-group;
+	}
+	
+	img,
+	tr {
+		page-break-inside: avoid;
+	}
+	
+	img {
+		max-width: 100% !important;
+	}
+	
+	h2,
+	h3,
+	p {
+		orphans: 3;
+		widows: 3;
+	}
+	
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
+}
+
+/* @end */

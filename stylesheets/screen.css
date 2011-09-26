@@ -123,7 +123,7 @@ body {
 	/* @group - Hide from screen readers and browsers: h5bp.com/u */
 	
 	.js .hidden {
-		display: none !important;
+		display: none;
 	}
 	
 	/* @end */
@@ -142,7 +142,7 @@ body {
 		background: transparent !important;
 		color: black !important;
 		-ms-filter: none !important;
-		filter:none !important;
+		filter: none !important;
 		text-shadow: none !important;
 	}
 	

@@ -61,7 +61,7 @@ body {
 
 
 /* @group Non-semantic helper classes */
-
+	
 	/* @group - Contain floats: h5bp.com/q */
 	
 	.clear {
@@ -84,6 +84,7 @@ body {
 	
 	.ir {
 		display: block;
+		*line-height: 0;
 		overflow: hidden;
 		text-align: left;
 		text-indent: -999em;
@@ -122,8 +123,9 @@ body {
 	
 	/* @group - Hide from screen readers and browsers: h5bp.com/u */
 	
-	.js .hidden {
-		display: none;
+	.hidden {
+		display: none !important;
+		visibility: hidden;
 	}
 	
 	/* @end */
